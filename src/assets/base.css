@@ -1,0 +1,57 @@
+/* black & white only palette */
+:root {
+    --c-white: #ffffff;
+    --c-black: #000000;
+
+    --color-background: var(--c-white);
+    --color-background-soft: var(--c-white);
+    --color-background-mute: var(--c-white);
+
+    --color-border: var(--c-black);
+    --color-border-hover: var(--c-black);
+
+    --color-heading: var(--c-black);
+    --color-text: var(--c-black);
+
+    --section-gap: 160px;
+}
+
+body.dark-mode {
+    --color-background: var(--c-black);
+    --color-text: var(--c-white);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-background: var(--c-black);
+        --color-background-soft: var(--c-black);
+        --color-background-mute: var(--c-black);
+
+        --color-border: var(--c-white);
+        --color-border-hover: var(--c-white);
+
+        --color-heading: var(--c-white);
+        --color-text: var(--c-white);
+    }
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    font-weight: normal;
+}
+
+body {
+    min-height: 100vh;
+    color: var(--color-text);
+    background: var(--color-background);
+    transition: color 0.5s, background-color 0.5s;
+    line-height: 1.6;
+    font-family: 'Times New Roman', Georgia, serif;
+    font-size: 15px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
