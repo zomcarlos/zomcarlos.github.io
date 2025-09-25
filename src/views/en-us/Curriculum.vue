@@ -11,7 +11,7 @@
       I also have <strong>full-stack</strong> experience using <strong>Angular/Typescript</strong>,
       <strong>PostgreSQL</strong>, and <strong>JasperReports</strong> for reporting solutions.
       In addition, I am familiar with <strong>Git</strong>, <strong>Kubernetes</strong>, and
-      <strong>Jenkins</strong>. Take a look at my complete resume<a href="/Carlos%20Zomer%20-%20Resume.pdf">here</a>.
+      <strong>Jenkins</strong>. Take a look at my complete resume<a target="_blank" rel="noopener noreferrer" href="/Carlos%20Zomer%20-%20Resume.pdf">here</a>.
     </p>
   </div>
 </template>
