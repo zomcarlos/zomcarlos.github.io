@@ -1,7 +1,6 @@
 <template>
   <div class="theme-switch" @click="toggleTheme">
     <svg v-if="!isDark" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-      <!-- Sun Icon -->
       <circle cx="12" cy="12" r="5"/>
       <g stroke="currentColor" stroke-width="2">
         <line x1="12" y1="1" x2="12" y2="3"/>
@@ -16,7 +15,6 @@
     </svg>
 
     <svg v-else xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-      <!-- Moon Icon -->
       <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z"/>
     </svg>
   </div>
@@ -31,16 +29,18 @@ onMounted(() => {
   const saved = localStorage.getItem('darkMode')
   if (saved) {
     isDark.value = saved === 'true'
-    updateBodyClass()
-  } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    isDark.value = true
-    updateBodyClass()
+  } else {
+    isDark.value = false
   }
+  updateBodyClass()
 })
 
 function updateBodyClass() {
-  if (isDark.value) document.body.classList.add('dark-mode')
-  else document.body.classList.remove('dark-mode')
+  if (isDark.value) {
+    document.body.classList.add('dark-mode')
+  } else {
+    document.body.classList.remove('dark-mode')
+  }
 }
 
 function toggleTheme() {
@@ -66,4 +66,3 @@ function toggleTheme() {
   transform: scale(1.2);
 }
 </style>
-

@@ -21,20 +21,6 @@ body.dark-mode {
     --color-text: var(--c-white);
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --color-background: var(--c-black);
-        --color-background-soft: var(--c-black);
-        --color-background-mute: var(--c-black);
-
-        --color-border: var(--c-white);
-        --color-border-hover: var(--c-white);
-
-        --color-heading: var(--c-white);
-        --color-text: var(--c-white);
-    }
-}
-
 *,
 *::before,
 *::after {
