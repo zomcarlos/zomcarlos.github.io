@@ -11,7 +11,7 @@
       Também tenho experiência <strong>full-stack</strong> com <strong>Angular/Typescript</strong>,
       <strong>PostgreSQL</strong> e <strong>JasperReports</strong> para geração de relatórios.
       Além disso, sou familiarizado com <strong>Git</strong>, <strong>Kubernetes</strong> e
-      <strong>Jenkins</strong>. Veja meu currículo completo<a target="_blank" rel="noopener noreferrer" href="/Carlos%20Zomer%20-%20CV.pdf">aqui</a>.
+      <strong>Jenkins</strong>. Veja meu currículo completo<a target="_blank" rel="noopener noreferrer" href="/Carlos%20Zomer%20%20-%20CV.pdf">aqui</a>.
     </p>
   </div>
 </template>
